@@ -6,6 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
+*.txt
 
 source/
 node_modules/
