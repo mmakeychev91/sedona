@@ -2,119 +2,135 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
 
-    <title>Гостиницы Седоны</title>
-    <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Гостиницы Седоны</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
   <header class="main-header">
     <nav class="main-header__navigation">
-          <a href="index.html" class="main-header__logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип">
-          </a>
-          <ul class="main-header__site-navigation hotels-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo.svg" width="138" height="70" alt="Логотип">
+      </a>
+      <ul class="main-header__site-navigation hotels-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a>Гостиницы</a></li>
+      </ul>
     </nav>
   </header>
-
   <main class="container">
     <h2 class="visually-hidden">
-      ПОИСК ГОСТИНИЦЫ В седоне
+      Поиск отеля в седоне
     </h2>
-    <div class="choosing-hotel">
-      <section class="choosing-holel__form">
+    <section class="choosing-hotel">
+      <h2 class="visually-hidden">
+        Параметры отеля
+      </h2>
+      <div class="choosing-holel__form">
         <form action="">
           <h3>Инфраструктура</h3>
           <input type="checkbox" checked name="choice">
-            Бассейн
+          Бассейн
           <br><input type="checkbox" name="choice">
-            Парковка
+          Парковка
           <br><input type="checkbox" name="choice">
-            WI-FI
+          WI-FI
         </form>
-      </section>
-      <section class="choosing-holel__form">
+      </div>
+      <div class="choosing-holel__form">
         <form action="">
           <h3>тип жилья:</h3>
           <input type="checkbox" checked name="choice">
-            Гостиница
+          Гостиница
           <br><input type="checkbox" checked name="choice">
-            Мотель
+          Мотель
           <br><input type="checkbox" checked name="choice">
-            Апартаменты
+          Апартаменты
         </form>
-      </section>
-      <section class="choosing-hotel__form choosing-hotel__price">
-        <form action="https://echo.htmlacademy.ru/">
-        <h3>Стомость в сутки (Р):</h3>
-        <span>от 0</span>
-        <span>до 3000</span>
-        <BR><input type="submit" value="ПОКАЗАТЬ" >
-        </form>
-      </section>
-    </div>
-    <div class="user-choice">
-      
-    </div>
-
-  </main>
-
-
-
-
-  <footer class="page-footer">
-      <div class="container">
-        <section class="page-footer__contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p>#visitSEDONA</p>
-          <p>ТЕЛ: +7(495) 666-01</p>
-        </section>
-        <section class="page-footer-social">
-
-          <ul>
-            <li>
-              <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Twitter" width="46" height="48">
-              </a>
-            </li>
-            <li>
-              <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Facebook" width="46" height="48">
-              </a>
-            </li>
-            <li>
-              <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Youtobe" width="46" height="48">
-              </a>
-            </li>
-          </ul>
-          
-        </section>
-        <section class="page-footer-copyright">
-          <p>Website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer-copyright__logo">
-            <img src="https://via.placeholder.com/1200x509" alt="Логотип html academy" width="115" height="41">
-          </a>
-        </section>
-
-
-
-
-
-
-
-
       </div>
+      <div class="choosing-hotel__form choosing-hotel__price">
+        <form action="https://echo.htmlacademy.ru/">
+          <h3>Стомость в сутки (Р):</h3>
+          <span>от 0</span>
+          <span>до 3000</span>
+          <BR><input type="submit" value="ПОКАЗАТЬ">
+        </form>
+      </div>
+    </section>
+    <section class="user-choice">
+      <h2 class="visually-hidden">
+        Найденные отели
+      </h2>
+      <div class="finded">
+        <h3>
+          Найдено:3
+        </h3>
+        <div class="user-choice__sorting">
+          <p>Сортировка</p>
+          <ul>
+            <li><a href="#">по цене </a></li>
+            <li><a href="#">по типу </a></li>
+            <li><a href="#">по рейтингу</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Сортировка по возрастанию</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <section class="page-footer__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>#visitsedona</p>
+        <a href="tel:+74956660166">
+          ТЕЛ: +7(495) 666-01-66
+        </a>
+      </section>
+      <section class="page-footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li>
+            <a href="" class="page-footer-social__button">
+              <img src="https://via.placeholder.com/1200x509" alt="Twitter" width="46" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="" class="page-footer-social__button">
+              <img src="https://via.placeholder.com/1200x509" alt="Facebook" width="46" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="" class="page-footer-social__button">
+              <img src="https://via.placeholder.com/1200x509" alt="Youtobe" width="46" height="48">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer-copyright">
+        <h2 class="visually-hidden">Разработано HTML academy</h2>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer-copyright__logo">
+          <img src="https://via.placeholder.com/1200x509" alt="Логотип html academy" width="115" height="41">
+        </a>
+      </section>
+    </div>
   </footer>
+</body>
 
-  </body>
 </html>
