@@ -1,20 +1,21 @@
 <!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Город Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <nav class="main-header__navigation">
       <a class="main-header__logo">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип">
+        <img src="files/logo.svg" width="138" height="70" alt="Логотип">
       </a>
       <ul class="main-header__site-navigation">
         <li>
@@ -32,7 +33,7 @@
     </nav>
   </header>
   <main class="container">
-    <img src="https://via.placeholder.com/1200x509" width="1200" height="509" alt="Добро пожаловать в город Седона">
+    <div class="bg"></div>
     <h1 class="visually-hidden">Седона</h1>
     <div class="about">
       <h2>
@@ -155,4 +156,3 @@
 </body>
 
 </html>
-

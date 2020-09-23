@@ -1,3 +1,128 @@
+:root {
+  --basic-black: #000000;
+  --basic-extra-light-gray: #EEEEEE;
+  --basic-light-gray: #CACACA;
+  --basic-gray: #888888;
+  --special-more-gray: #6A6A6A;
+  --basic-invisible: #333333;
+  --basic-white: #ffffff;
+  --basic-neutral: #F2F2F2;
+  --basic-light-brown: #766357;
+  --special-brown: #604E43;
+  --special-extra-brown: #503E33;
+  --basic-light-blue: #81B3D2;
+  --basic-blue: #669EC0;
+  --basic-extra-blue: #5496BD;
+}
+
 body {
+  min-width: 1200px;
+  margin: 0px;
+  padding: 0px;
   text-transform: uppercase;
+  background-color: var(--basic-neutral);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
+  -ms-grid-rows: min-content 1fr min-content;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+.main-header__navigation {
+  display: -ms-grid;
+  display: grid;
+}
+.main-header__site-navigation {
+  font-weight: 700;
+}
+
+.bg {
+  width: 1200px;
+  height: 509px;
+  background-image: url("../img/background-photo.jpg");
+  margin: 0 0 25px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.about p {
+  color: var(--basic-invisible);
+}
+
+.features__row2__item p {
+  color: var(--basic-invisible);
+}
+.features__row2__item h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+.features__row4 {
+  background-color: var(--basic-extra-light-gray);
+}
+.features__row4 p {
+  color: var(--basic-invisible);
+}
+.features__row4 h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.item1 {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-white);
+}
+.item1 h3 {
+  font-size: 21px;
+}
+
+.search-hotels__box {
+  line-height: 24px;
+}
+.search-hotels__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.page-footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-footer__contacts {
+  font-size: 21px;
+  font-weight: 700;
 }
