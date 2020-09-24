@@ -12,10 +12,11 @@
 </head>
 
 <body class="page-body">
+  <div class="wrapper">
   <header class="main-header">
     <nav class="main-header__navigation">
       <a class="main-header__logo">
-        <img src="files/logo.svg" width="138" height="70" alt="Логотип">
+        <img src="img/files/logo.svg" width="138" height="70" alt="Логотип">
       </a>
       <ul class="main-header__site-navigation">
         <li>
@@ -33,7 +34,9 @@
     </nav>
   </header>
   <main class="container">
-    <div class="bg"></div>
+    <div class="intro">
+      <img class="intro__pic" src="img/files/welcome.svg" alt="Добро пожаловать в великолепную Седону! Потому что Большой-Каньон - отстой!" width="457" height="351">
+    </div>
     <h1 class="visually-hidden">Седона</h1>
     <div class="about">
       <h2>
@@ -49,16 +52,17 @@
       </h2>
       <ul>
         <li>
-          <div class="features__column1 item1">
+
+          <div class="features__row1 item1">
             <h3>настоящий городок</h3>
             <p>№1</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="features__pic pic" src="https://via.placeholder.com/1200x509" alt="город Седона" width="800" height="256">
+          <img class="features__row1 pic" src="https://via.placeholder.com/1200x509" alt="город Седона" width="800" height="256">
           <ul class="features__row2">
             <li class="features__row2__item">
               <h3>Жильё</h3>
-              <p>Жильё Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features__row2__item">
               <h3>Еда</h3>
@@ -153,6 +157,7 @@
       </section>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
