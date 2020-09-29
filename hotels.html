@@ -34,43 +34,51 @@
       </nav>
     </header>
     <main class="container">
-      <h2 class="visually-hidden">
+      <h1 class="visually-hidden">
         Поиск отеля в седоне
-      </h2>
+      </h1>
       <section class="choosing-hotel">
         <h2 class="visually-hidden">
           Параметры отеля
         </h2>
-        <div class="choosing-holel__form">
-          <form action="">
-            <h3>Инфраструктура:</h3>
-            <input type="checkbox" checked name="choice">
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset class="choosing-holel__form">
+            <legend>
+              <h3>Инфраструктура:</h3>
+            </legend>
+            <input type="checkbox" checked name="pool">
             Бассейн
-            <br><input type="checkbox" name="choice">
+            <input type="checkbox" name="parking">
             Парковка
-            <br><input type="checkbox" name="choice">
+            <input type="checkbox" name="wi-fi">
             WI-FI
-          </form>
-        </div>
-        <div class="choosing-holel__form">
-          <form action="">
-            <h3>тип жилья:</h3>
-            <input type="checkbox" checked name="choice">
+          </fieldset>
+          <fieldset class="choosing-holel__form">
+            <legend>
+              <h3>тип жилья:</h3>
+            </legend>
+            <input type="checkbox" checked name="hotel">
             Гостиница
-            <br><input type="checkbox" checked name="choice">
+            <input type="checkbox" checked name="motel">
             Мотель
-            <br><input type="checkbox" checked name="choice">
+            <input type="checkbox" checked name="apartments">
             Апартаменты
-          </form>
-        </div>
-        <div class="choosing-hotel__price">
-          <form action="https://echo.htmlacademy.ru/">
-            <h3>Стоимость в сутки (Р):</h3>
-            <span>от 0</span>
-            <span>до 3000</span>
-            <BR><input type="submit" value="ПОКАЗАТЬ">
-          </form>
-        </div>
+          </fieldset>
+          <fieldset class="choosing-hotel__price">
+            <legend>
+              <h3>Стоимость в сутки (Р):</h3>
+            </legend>
+            <div class="input">
+              <span>от</span>
+              <input type="text" value="0" name="from">
+              <span>до</span>
+              <input type="text" value="3000" name="till">
+            </div>
+            <button type="submit">
+              показать
+            </button>
+          </fieldset>
+        </form>
       </section>
       <section class="user-choice">
         <h2 class="visually-hidden">
@@ -110,13 +118,13 @@
                 <dt>Гостиница</dt>
                 <dd>От 4000 Р.</dd>
               </dl>
-              <a href="#" class="user-choice-list-row1 link" action="">
+              <a href="#" class="user-choice-list-row1 more-details" action="">
                 Подробнее
               </a>
-              <a href="#" class="user-choice-list-row1 link2" action="">
+              <a href="#" class="user-choice-list-row1 reservation" action="">
                 Забронировать
               </a>
-              <br><img width="91" height="17" src="https://via.placeholder.com/91x17" alt="Количество звезд Amara Resort & Spa">
+              <img width="91" height="17" src="https://via.placeholder.com/91x17" alt="Количество звезд Amara Resort & Spa">
               <p>Рейтинг: 8,5</p>
             </div>
           </li>
@@ -130,13 +138,13 @@
                 <dt>Мотель</dt>
                 <dd>От 3000 Р.</dd>
               </dl>
-              <a href="#" class="user-choice-list-row2 link" action="">
+              <a href="#" class="user-choice-list-row2 more-details" action="">
                 Подробнее
               </a>
-              <a href="#" class="user-choice-list-row2 link2" action="">
+              <a href="#" class="user-choice-list-row2 reservation" action="">
                 Забронировать
               </a>
-              <br><img width="66" height="17" src="https://via.placeholder.com/66x17" alt="Количество звезд Desert Quail Inn">
+              <img width="66" height="17" src="https://via.placeholder.com/66x17" alt="Количество звезд Desert Quail Inn">
               <p>Рейтинг: 8,5</p>
             </div>
           </li>
@@ -150,13 +158,13 @@
                 <dt>Апартаменты</dt>
                 <dd>От 2000 Р.</dd>
               </dl>
-              <a href="#" class="user-choice-list-row3 link" action="">
+              <a href="#" class="user-choice-list-row3 more-details" action="">
                 Подробнее
               </a>
-              <a href="#" class="user-choice-list-row3 link2" action="">
+              <a href="#" class="user-choice-list-row3 reservation" action="">
                 Забронировать
               </a>
-              <br><img width="42" height="17" src="https://via.placeholder.com/42x17" alt="Количество звезд Villas at Poco Diablo">
+              <img width="42" height="17" src="https://via.placeholder.com/42x17" alt="Количество звезд Villas at Poco Diablo">
               <p>Рейтинг: 9,5</p>
             </div>
           </li>
@@ -187,7 +195,7 @@
             </li>
             <li>
               <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Youtobe" width="46" height="48">
+                <img src="https://via.placeholder.com/1200x509" alt="Youtube" width="46" height="48">
               </a>
             </li>
           </ul>
