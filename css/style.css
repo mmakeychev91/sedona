@@ -218,16 +218,6 @@ body {
 .choosing-hotel__price span {
   text-align: right;
 }
-.choosing-hotel__price input {
-  width: 50px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background: transparent;
-  border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
 .choosing-hotel__price button {
   width: 137px;
   padding: 7px 0;
