@@ -42,37 +42,53 @@
           Параметры отеля
         </h2>
         <form method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset class="choosing-holel__form">
+          <fieldset class="choosing-hotel__infrastructure">
             <legend>
               <h3>Инфраструктура:</h3>
             </legend>
-            <input type="checkbox" checked name="pool">
-            Бассейн
-            <input type="checkbox" name="parking">
-            Парковка
-            <input type="checkbox" name="wi-fi">
-            WI-FI
+            <label>
+              <input type="checkbox" checked name="pool">
+              Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking">
+              Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="wi-fi">
+              WI-FI
+            </label>
           </fieldset>
-          <fieldset class="choosing-holel__form">
+          <fieldset class="choosing-hotel__type-of-housing">
             <legend>
               <h3>тип жилья:</h3>
             </legend>
-            <input type="checkbox" checked name="hotel">
-            Гостиница
-            <input type="checkbox" checked name="motel">
-            Мотель
-            <input type="checkbox" checked name="apartments">
-            Апартаменты
+            <label>
+              <input type="checkbox" checked name="hotel">
+              Гостиница
+            </label>
+            <label>
+              <input type="checkbox" checked name="motel">
+              Мотель
+            </label>
+            <label>
+              <input type="checkbox" checked name="apartments">
+              Апартаменты
+            </label>
           </fieldset>
           <fieldset class="choosing-hotel__price">
             <legend>
               <h3>Стоимость в сутки (Р):</h3>
             </legend>
             <div class="input">
-              <span>от</span>
-              <input type="text" value="0" name="from">
-              <span>до</span>
-              <input type="text" value="3000" name="till">
+              <label>
+                <span>от</span>
+                <input type="text" value="0" name="from">
+              </label>
+              <label>
+                <span>до</span>
+                <input type="text" value="3000" name="till">
+              </label>
             </div>
             <button type="submit">
               показать
@@ -91,9 +107,9 @@
           <div class="user-choice-finded__sorting1">
             <p>Сортировка:</p>
             <ul>
-              <li><a href="#" class="user-choice-finded__sorting1-item">по цене </a></li>
-              <li><a class="user-choice-finded__sorting1-item2" href="#">по типу </a></li>
-              <li><a class="user-choice-finded__sorting1-item2" href="#">по рейтингу</a></li>
+              <li><a href="#" class="user-choice-finded__sorting1-item">по цене</a></li>
+              <li><a href="#" class="user-choice-finded__sorting1-item2">по типу</a></li>
+              <li><a href="#" class="user-choice-finded__sorting1-item2">по рейтингу</a></li>
             </ul>
           </div>
           <ul class="user-choice-finded__sorting2">
@@ -110,7 +126,7 @@
         <ul class="user-choice-list">
           <li>
             <div class="user-choice-list-row1 hotel">
-              <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Гостиница Amara Resort & Spa">
+              <img src="img/files/hotels/amara_resort.jpg" width="138" height="70" alt="Гостиница Amara Resort & Spa">
               <h3>
                 <a href="#">Amara Resort & Spa</a>
               </h3>
@@ -130,7 +146,7 @@
           </li>
           <li>
             <div class="user-choice-list-row2 hotel">
-              <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Мотель Desert Quail Inn">
+              <img src="img/files/hotels/desert_quail.jpg" width="138" height="70" alt="Мотель Desert Quail Inn">
               <h3>
                 <a href="#">Desert Quail Inn</a>
               </h3>
@@ -150,7 +166,7 @@
           </li>
           <li>
             <div class="user-choice-list-row3 hotel">
-              <img src="https://via.placeholder.com/1200x509" width="138" height="70" alt="Гостиница Amara Resort & Spa">
+              <img src="img/files/hotels/villas_at_poco.jpg" width="138" height="70" alt="Апартаменты Villas at Poco Diablo">
               <h3>
                 <a href="#">Villas at Poco Diablo</a>
               </h3>
@@ -185,17 +201,17 @@
           <ul>
             <li>
               <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Twitter" width="46" height="48">
+                <img src="img/icons/twitter.svg" alt="Twitter" width="46" height="48">
               </a>
             </li>
             <li>
               <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Facebook" width="46" height="48">
+                <img src="img/icons/facebook.svg" alt="Facebook" width="46" height="48">
               </a>
             </li>
             <li>
               <a href="" class="page-footer-social__button">
-                <img src="https://via.placeholder.com/1200x509" alt="Youtube" width="46" height="48">
+                <img src="img/icons/youtube.svg" alt="Youtobe" width="46" height="48">
               </a>
             </li>
           </ul>
