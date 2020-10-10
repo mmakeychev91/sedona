@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --basic-black: #000000;
+  --special-black: #22353с;
   --basic-extra-light-gray: #EEEEEE;
   --basic-light-gray: #CACACA;
   --basic-gray: #888888;
@@ -427,11 +428,58 @@ body {
 }
 
 .choosing-hotel {
-  min-height: 217px;
-  width: 1200px;
+  min-height: 158px;
+  width: 1056px;
   color: var(--basic-white);
+  padding: 27px 72px 32px 72px;
   background: var(--basic-extra-blue) url("../img/background-hotels.png");
   background-repeat: no-repeat;
+}
+.choosing-hotel form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.choosing-hotel fieldset {
+  padding: 0;
+  border: none;
+}
+.choosing-hotel fieldset legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.choosing-hotel__first-columns {
+  /*На случай, если элементов формы будет больше*/
+  width: 738px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.choosing-hotel__first-columns fieldset {
+  margin-right: 120px;
+}
+.choosing-hotel__first-columns fieldset:nth-child(3n) {
+  margin-right: 0;
+}
+.choosing-hotel__first-columns fieldset:nth-child(n+4) {
+  margin-top: 30px;
+}
+.choosing-hotel__infrastructure {
+  width: 135px;
+  min-height: 157px;
+}
+.choosing-hotel__type-of-housing {
+  width: 137px;
+  min-height: 157px;
+}
+.choosing-hotel__last-column {
+  width: 317px;
+  min-height: 157px;
 }
 .choosing-hotel__show {
   width: 137px;
@@ -448,19 +496,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-.choosing-hotel form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.choosing-hotel fieldset {
-  border: none;
-}
-.choosing-hotel fieldset legend {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-}
+
 .input {
   width: 317px;
   border: 2px solid #FFFFFF;

@@ -15,7 +15,7 @@
   <div class="wrapper">
     <header class="main-header">
       <nav class="main-header__navigation">
-        <a href="index.html" class="main-header__logo">
+        <a href="index.html" class="main-header__logo" aria-label="Перейти на главную страницу">
           <img src="img/files/logo.svg" width="138" height="70" alt="Логотип">
         </a>
         <ul class="main-header__site-navigation">
@@ -42,58 +42,62 @@
           Параметры отеля
         </h2>
         <form method="get" action="https://echo.htmlacademy.ru/">
-          <fieldset class="choosing-hotel__infrastructure">
-            <legend>
-              Инфраструктура:
-            </legend>
-            <label>
-              <input type="checkbox" checked name="pool">
-              Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking">
-              Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wi-fi">
-              WI-FI
-            </label>
-          </fieldset>
-          <fieldset class="choosing-hotel__type-of-housing">
-            <legend>
-              тип жилья:
-            </legend>
-            <label>
-              <input type="checkbox" checked name="hotel">
-              Гостиница
-            </label>
-            <label>
-              <input type="checkbox" checked name="motel">
-              Мотель
-            </label>
-            <label>
-              <input type="checkbox" checked name="apartments">
-              Апартаменты
-            </label>
-          </fieldset>
-          <fieldset class="choosing-hotel__price">
-            <legend>
-              Стоимость в сутки (Р):
-            </legend>
-            <div class="input">
+          <div class="choosing-hotel__first-columns">
+            <fieldset class="choosing-hotel__infrastructure">
+              <legend>
+                Инфраструктура:
+              </legend>
               <label>
-                <span>от</span>
-                <input type="text" value="0" name="from">
+                <input type="checkbox" checked name="pool">
+                Бассейн
               </label>
               <label>
-                <span>до</span>
-                <input type="text" value="3000" name="till">
+                <input type="checkbox" name="parking">
+                Парковка
               </label>
-            </div>
-          </fieldset>
-          <button class="choosing-hotel__show" type="submit">
-            показать
-          </button>
+              <label>
+                <input type="checkbox" name="wi-fi">
+                WI-FI
+              </label>
+            </fieldset>
+            <fieldset class="choosing-hotel__type-of-housing">
+              <legend>
+                тип жилья:
+              </legend>
+              <label>
+                <input type="checkbox" checked name="hotel">
+                Гостиница
+              </label>
+              <label>
+                <input type="checkbox" checked name="motel">
+                Мотель
+              </label>
+              <label>
+                <input type="checkbox" checked name="apartments">
+                Апартаменты
+              </label>
+            </fieldset>
+          </div>
+          <div class="choosing-hotel__last-column">
+            <fieldset class="choosing-hotel__price">
+              <legend>
+                Стоимость в сутки (Р):
+              </legend>
+              <div class="input">
+                <label>
+                  <span>от</span>
+                  <input type="text" value="0" name="from">
+                </label>
+                <label>
+                  <span>до</span>
+                  <input type="text" value="3000" name="till">
+                </label>
+              </div>
+            </fieldset>
+            <button class="choosing-hotel__show" type="submit">
+              показать
+            </button>
+          </div>
         </form>
       </section>
       <section class="user-choice">
@@ -127,9 +131,8 @@
           <li>
             <div class="user-choice-list-row1 hotel">
               <img src="img/files/hotels/amara_resort.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-
-              <head></head>3>
-              <a href="#">Amara Resort & Spa</a>
+              <h3>
+                <a href="#">Amara Resort & Spa</a>
               </h3>
               <dl>
                 <dt>Гостиница</dt>
@@ -207,17 +210,20 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul>
             <li>
-              <a href="" class="page-footer-social__button">
+              <a href="#" class="page-footer-social__button">
+                <span class="visually-hidden">Твиттер</span>
                 <img src="img/icons/twitter.svg" alt="Twitter" width="17" height="16">
               </a>
             </li>
             <li>
-              <a href="" class="page-footer-social__button">
+              <a href="#" class="page-footer-social__button">
+                <span class="visually-hidden">Фейсбук</span>
                 <img src="img/icons/facebook.svg" alt="Facebook" width="12" height="22">
               </a>
             </li>
             <li>
-              <a href="" class="page-footer-social__button">
+              <a href="#" class="page-footer-social__button">
+                <span class="visually-hidden">Ютуб</span>
                 <img src="img/icons/youtube.svg" alt="Youtobe" width="20" height="16">
               </a>
             </li>
