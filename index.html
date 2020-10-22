@@ -19,16 +19,20 @@
           <img src="img/files/logo.svg" width="138" height="70" alt="Логотип">
         </a>
         <ul class="main-header__site-navigation">
-          <li>
-            <a class="main-header__site-navigation-item" href="#">Информация</a>
+          <li class="main-header__site-navigation-item">
+            <a class="site-navigation-link" href="#">Информация</a>
           </li>
-          <li>
-            <a class="main-header__site-navigation-item" href="#">Фото и видео</a>
+          <li class="main-header__site-navigation-item2">
+            <a class="site-navigation-link" href="#">Фото и видео</a>
           </li>
-          <li>
-            <a class="main-header__site-navigation-item" href="#">Карта штата</a></li>
-          <li>
-            <a class="main-header__site-navigation-item" href="hotels.html">Гостиницы</a>
+          <!-- Если изменятся названия пунктов меню, текст не будет прятаться за логотип  -->
+          <li class="main-header__site-navigation-item3">
+            <a class="site-navigation-link" href="#"></a>
+          </li>
+          <li class="main-header__site-navigation-item4">
+            <a class="site-navigation-link" href="#">Карта штата</a></li>
+          <li class="main-header__site-navigation-item5">
+            <a class="site-navigation-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +41,7 @@
       <div class="intro">
         <img class="intro__pic" src="img/files/welcome.svg" alt="Добро пожаловать в великолепную Седону! Потому что Большой-Каньон - отстой!" width="457" height="351">
       </div>
-      <h1 class="visually-hidden">Седона</h1>
+      <h1 class="visually-hidden">Город Седона</h1>
       <div class="about">
         <h2>
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -52,22 +56,24 @@
         </h2>
         <ul>
           <li class="first-features">
-            <div class="features__row1 item1">
-              <h3 class="features__title title-h3_white">настоящий городок</h3>
-              <p>№1</p>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="features__row1">
+              <div class="item">
+                <h3 class="features__title title_white">настоящий городок</h3>
+                <p class="number">№1</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img class="features__row1-pic pic" src="img/files/sedona.jpg" alt="город Седона" width="800" height="256">
             </div>
             <ul class="features__row2">
-              <li class="features__row2-item">
+              <li class="features__row2-columns housing">
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="features__row2-item">
+              <li class="features__row2-columns food">
                 <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь! </p>
               </li>
-              <li class="features__row2-item">
+              <li class="features__row2-columns souvenirs">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного
                   производства!</p>
@@ -75,34 +81,43 @@
             </ul>
           </li>
           <li class="second-features">
-            <div class="features__row3 item1">
+            <div class="features__row3">
               <img class="features__row3-pic pic" src="img/files/bridge.jpg" alt="Мост" width="800" height="256">
-              <h3 class="title-h3_white">Там есть мост дьявола</h3>
-              <p>№2</p>
-              <p>Да, по нему можно пройти! Если конечно
-                вы осмелитесь</p>
+              <div class="item">
+                <h3 class="title_white">Там есть <br>мост дьявола</h3>
+                <p class="number">№2</p>
+                <p>Да, по нему можно пройти! Если конечно
+                  вы осмелитесь</p>
+              </div>
             </div>
           </li>
-          <li class="features__row4 fourth-features">
+          <li class="features__gray-block third-features">
             <h3>Небольшая
               площадь</h3>
-            <p>№3</p>
+            <p class="number">№3</p>
             <p>все достопримечательности
               находятся очень близко</p>
           </li>
-          <li class="features__row4 fifth-features">
+          <li class="features__gray-block fourth-features">
             <h3>красивая
               дорога</h3>
-            <p>№4</p>
+            <p class="number">№4</p>
             <p>ехать в седону из лас-вегаса совсем
               не скучно!</p>
           </li>
-          <li class="features__row4 sixth-features">
+          <li class="features__gray-block fifth-features">
             <h3>мало
               туристов</h3>
-            <p>№5</p>
+            <p class="number">№5</p>
             <p>большинство едет в гранд каньон
-              и толпится там</p>
+              <br>и толпится там</p>
+          </li>
+          <li class="features__gray-block fifth-features">
+            <h3>мало
+              туристов</h3>
+            <p class="number">№5</p>
+            <p>большинство едет в гранд каньон
+              <br>и толпится там</p>
           </li>
         </ul>
       </section>
@@ -111,41 +126,42 @@
           <h2 class="search-hotels__title">
             Заинтересовались?
           </h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
         </section>
         <section class="searching-form">
           <div class="searching-form__title">
             <a href="#">
-              <h2 class="title-h3_white">
+              <h2 class="title_white">
                 Поиск гостиницы в Седоне
               </h2>
             </a>
           </div>
-          <form class="form" method="get" action=" https://echo.htmlacademy.ru/"> <label class="form__label" for="arrival-date">
+          <form class="searching-form__form form" method="get" action=" https://echo.htmlacademy.ru/">
+            <label class="form__label arrival-date" for="arrival-date">
               Дата заезда:
             </label>
-            <input class="form__input" id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
-            <button class="form__button-calendar" type="button" aria-label="Выберите дату">
+            <input class="form__input input-arrival-date" id="arrival-date" type="text" name="arrival-date" value="24 апреля 2017">
+            <button class="form__button-calendar-arrival" type="button" aria-label="Выберите дату">
             </button>
-            <label class="form__label" for="departure-date">
+            <label class="form__label departure-date" for="departure-date">
               Дата выезда:
             </label>
-            <input class="form__input" id="departure-date" type="text" name="departure-date" value="4 июля 2017">
-            <button class="form__button-calendar" type="button" aria-label="Выберите дату">
+            <input class="form__input input-departure-date" id="departure-date" type="text" name="departure-date" value="4 июля 2017">
+            <button class="form__button-calendar-departure" type="button" aria-label="Выберите дату">
             </button>
-            <label class="form__label" for="adults">
+            <label class="form__label adults" for="adults">
               Взрослые:
             </label>
-            <button class="form__button-" type="button" aria-label="-"></button>
-            <input class="form__quantity" id="adults" type="number" name="adults" value="2">
-            <button class="form__button+" type="button" aria-label="+"></button>
-            <label class="form__label" for="children">
+            <!--  <button class="form__button-" type="button" aria-label="-"></button> -->
+            <input class="form__quantity quantity-adults" id="adults" type="number" name="adults" value="2">
+            <!-- <button class="form__button+" type="button" aria-label="+"></button> -->
+            <label class="form__label children" for="children">
               Дети:
             </label>
-            <button class="form__button-" type="button" aria-label="-"></button>
-            <input class="form__quantity" id="children" type="number" name="children" value="0">
-            <button class="form__button+" type="button" aria-label="+"></button>
-            <button type="submit">
+            <!-- <button class="form__button-" type="button" aria-label="-"></button> -->
+            <input class="form__quantity quantity-children" id="children" type="number" name="children" value="0">
+            <!-- <button class="form__button+" type="button" aria-label="+"></button> -->
+            <button class="form__find" type="submit">
               найти
             </button>
           </form>
