@@ -7,8 +7,8 @@
   <meta charset="utf-8">
   <title>Гостиницы Седоны</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -45,9 +45,9 @@
         <h2 class="visually-hidden">
           Параметры отеля
         </h2>
-        <form method="get" action="https://echo.htmlacademy.ru/">
+        <form class="choosing-hotel__form" method="get" action="https://echo.htmlacademy.ru/">
           <div class="choosing-hotel__first-columns">
-            <fieldset class="choosing-hotel__infrastructure">
+            <fieldset class="choosing-hotel__fieldset choosing-hotel__infrastructure">
               <legend>
                 Инфраструктура:
               </legend>
@@ -64,7 +64,7 @@
                 WI-FI
               </label>
             </fieldset>
-            <fieldset class="choosing-hotel__type-of-housing">
+            <fieldset class="choosing-hotel__fieldset choosing-hotel__type-of-housing">
               <legend>
                 тип жилья:
               </legend>
@@ -83,7 +83,7 @@
             </fieldset>
           </div>
           <div class="choosing-hotel__last-column">
-            <fieldset class="choosing-hotel__price">
+            <fieldset class="choosing-hotel__fieldset choosing-hotel__price">
               <legend>
                 Стоимость в сутки (Р):
               </legend>
@@ -149,7 +149,7 @@
           <li>
             <div class="user-choice-list-hotel">
               <img class="user-choice-list-hotel__img" src="img/files/hotels/amara_resort.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
-              <h3>
+              <h3 class="user-choice-list-hotel__title">
                 <a href="#">Amara Resort & Spa</a>
               </h3>
               <dl>
@@ -176,7 +176,7 @@
           <li>
             <div class="user-choice-list-hotel">
               <img class="user-choice-list-hotel__img" src="img/files/hotels/desert_quail.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
-              <h3>
+              <h3 class="user-choice-list-hotel__title">
                 <a href="#">Desert Quail Inn</a>
               </h3>
               <dl>
@@ -202,7 +202,7 @@
           <li>
             <div class="user-choice-list-hotel">
               <img class="user-choice-list-hotel__img" src="img/files/hotels/villas_at_poco.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-              <h3>
+              <h3 class="user-choice-list-hotel__title">
                 <a href="#">Villas at Poco Diablo</a>
               </h3>
               <dl>
