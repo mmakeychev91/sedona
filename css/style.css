@@ -30,6 +30,7 @@
 html,
 body {
   height: 100%;
+  min-width: 1200px;
 }
 
 body {
@@ -1277,8 +1278,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,8 +1309,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1340,8 +1339,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1367,8 +1365,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  -ms-grid-column-align: right;
-      justify-self: right;
+  justify-self: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
