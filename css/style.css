@@ -1192,7 +1192,7 @@ body {
 
 .searching-form {
   position: relative;
-  width: 566px;
+  max-width: 566px;
   margin: 0 auto;
 }
 .searching-form__title {
@@ -1278,7 +1278,8 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  justify-self: left;
+  -ms-grid-column-align: left;
+      justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1309,7 +1310,8 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  justify-self: left;
+  -ms-grid-column-align: left;
+      justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,7 +1341,8 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  justify-self: left;
+  -ms-grid-column-align: left;
+      justify-self: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1365,7 +1368,8 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  justify-self: right;
+  -ms-grid-column-align: right;
+      justify-self: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
