@@ -1617,3 +1617,16 @@ input, input:before, input:after {
   -ms-user-select: initial;
   user-select: initial;
 }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Убираем оформление textarea */
+textarea {
+  resize: none;
+}
