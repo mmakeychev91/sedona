@@ -1611,7 +1611,9 @@ input::-webkit-input-placeholder {
   color: #000000;
 }
 
-input {
-  -webkit-user-select: text;
-  /* Chrome, Opera, Safari */
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
 }
