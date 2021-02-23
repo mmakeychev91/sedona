@@ -1254,7 +1254,6 @@ body {
 }
 .form input[type=number]::-webkit-inner-spin-button,
 .form input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
   margin: 0;
 }
 .form button {
@@ -1265,7 +1264,6 @@ body {
 }
 .form input {
   font-family: "PT Sans", Arial, sans-serif;
-  line-height: 26;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
@@ -1605,8 +1603,4 @@ body {
 }
 input[type=number] {
   -moz-appearance: textfield;
-}
-
-input[type=number] {
-  -webkit-appearance: number;
 }
