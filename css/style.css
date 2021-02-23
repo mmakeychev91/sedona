@@ -1603,6 +1603,10 @@ body {
             transform: translateY(0);
   }
 }
-.form-container {
-  width: 564px;
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  color: #000000;
 }
