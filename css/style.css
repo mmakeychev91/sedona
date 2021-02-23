@@ -1264,6 +1264,7 @@ body {
 }
 .form input {
   font-family: "PT Sans", Arial, sans-serif;
+  line-height: 26;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
