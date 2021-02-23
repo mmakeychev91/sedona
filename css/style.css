@@ -1607,26 +1607,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input::-webkit-input-placeholder {
-  color: #000000;
-}
-
-input, input:before, input:after {
-  -webkit-user-select: initial;
-  -moz-user-select: initial;
-  -ms-user-select: initial;
-  user-select: initial;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Убираем оформление textarea */
-textarea {
-  resize: none;
+input[type=number] {
+  -webkit-appearance: number;
 }
